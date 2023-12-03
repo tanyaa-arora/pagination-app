@@ -1,75 +1,105 @@
-.data-box{
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 3rem;
+}
+.row-information-box {
+  border-color: black;
+  border-style: solid;
+  margin: 2rem 0;
+}
+
+.row-box {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+  height: 4rem;
+}
+.checked-row {
+  background-color: #f4f4f4;
+}
+
+.row-border:not(:last-child) {
   border-bottom: 1px solid black;
 }
-body{
+
+.row-box div {
+  width: 12rem;
+  padding: 2px;
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input{
+  height: 1.50rem;
+  width: 15rem;
+  margin-right: 0.25rem;
+}
+.search-input:focus{
+  outline: none;
+}
+.search-container img{
+  height: 25px;
+  width: 25px;
+}
+.search-container button{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  border: 1px black solid;
+}
+
+.input-box {
+  height: 1.5rem;
+  margin: 0;
+  padding: 2px;
+}
+.input-box:focus {
+  outline: 0;
+  box-shadow: 0px 0.25px 8px grey;
+}
+
+.action-box {
+  display: flex;
+  justify-content: center;
+}
+.button-properties{
+  margin: 2px;
+  border: 1px solid black;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+}
+h4 {
   margin: 0;
 }
-.action-box{
-  display: flex;  
-}
-h4{
-  margin:0
-}
-.top-box{
+.top-box {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  align-items: center;
 }
-.footer{
+
+.footer {
   display: flex;
   justify-content: space-between;
 }
-.page-component{
+.page-component {
   display: flex;
   margin: 4px;
   align-items: center;
 }
-.page-component button{
-  height: 30px;
-  margin-left:5px;
+.page-component button {
+  margin-left: 0.5rem;
+  border: 1px solid black;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
 }
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
